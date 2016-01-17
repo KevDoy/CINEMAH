@@ -3,8 +3,8 @@
 
 CINEMAH (ver. 0.1) is a simple HTML and CSS based video organization interface that aims to be easy to edit and host by anyone. It is designed to be responsive and accessed both on Desktop and Mobile devices.
 
-![screenshot](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/screenshot.png "CINEMAH Landing Page")
-![screenshot2](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/screenshot2.png "CINEMAH Selection Screen")
+![screenshot](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/screenshot2.png "CINEMAH Landing Page")
+![screenshot2](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/screenshot.png "CINEMAH Selection Screen")
 ## Code Example
 
 With simple to edit code...
