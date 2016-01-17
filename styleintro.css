@@ -3,6 +3,9 @@
 
 html {
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+
 }
 
 body {
@@ -14,6 +17,7 @@ body {
 	display: flex;
   	justify-content: center;
   	flex-direction: column;
+	margin: 0;
 }
 
 .bg {
@@ -34,10 +38,12 @@ body {
 .logocontent {
 	margin: 0 auto;
 	width: 295px;
+	
 }
 
 .signin {
 	margin: 0 auto;
+	margin-top: 5px;
 	box-shadow: 0px 0px 30px rgba(0,0,0,0.25);
 	opacity: 0.75;
 	background: rgba(240,240,240,0.90);
@@ -48,6 +54,7 @@ body {
 	text-decoration: none;
 	text-align: center;
 	padding: 7px 0 0 0;
+	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
    	transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
@@ -60,10 +67,10 @@ body {
 	opacity: 1.0;
 }
 
-.footer {
-	background: #d63234;
-	height: 50px;
-	width: 100%;
+.version {
+	margin: 5px 0;
+	text-align: center;
+	color: rgba(0,0,0,0.3);
 }
 
 @media only screen and (max-width: 600px) {
