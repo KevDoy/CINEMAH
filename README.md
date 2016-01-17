@@ -13,7 +13,7 @@ The rest takes care of itself
 
 ## Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+I wanted to create a way for people within the house to watch our ripped movies from all of their devices. Chromecasting works, too.
 
 ## Installation
 
