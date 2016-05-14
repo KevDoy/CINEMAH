@@ -15,13 +15,13 @@ body {
 	height: 100%;
 	overflow: hidden;
 
-background: -moz-linear-gradient(left,  rgba(33,33,33,0.65) 0%, rgba(33,33,33,0.33) 50%, rgba(0,0,0,0) 100%) url("./backgrounds/02.png"); /* FF3.6-15 */
+background: -moz-linear-gradient(left,  rgba(33,33,33,0.65) 0%, rgba(33,33,33,0.33) 50%, rgba(0,0,0,0) 100%) url("./backgrounds/03.png"); /* FF3.6-15 */
 
-background: -webkit-linear-gradient(left,  rgba(33,33,33,0.65) 0%,rgba(33,33,33,0.33) 50%,rgba(0,0,0,0) 100%) url("./backgrounds/02.png"); /* Chrome10-25,Safari5.1-6 */
+background: -webkit-linear-gradient(left,  rgba(33,33,33,0.65) 0%,rgba(33,33,33,0.33) 50%,rgba(0,0,0,0) 100%) url("./backgrounds/03.png"); /* Chrome10-25,Safari5.1-6 */
 
-background: linear-gradient(to right,  rgba(33,33,33,0.65) 0%,rgba(33,33,33,0.33) 50%,rgba(0,0,0,0) 100%), url("./backgrounds/04.jpg"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: linear-gradient(to right,  rgba(33,33,33,0.65) 0%,rgba(33,33,33,0.33) 50%,rgba(0,0,0,0) 100%), url("./backgrounds/03.png"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6212121', endColorstr='#00000000',GradientType=1 ) url("./backgrounds/02.png"); /* IE6-9 */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6212121', endColorstr='#00000000',GradientType=1 ) url("./backgrounds/03.png"); /* IE6-9 */
 
 
 
