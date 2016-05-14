@@ -9,32 +9,63 @@ html {
 }
 
 body {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	background: #DFDFDF;
 	max-width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background-image: url("./bg.jpg");
+
+background: -moz-linear-gradient(left,  rgba(33,33,33,0.65) 0%, rgba(33,33,33,0.33) 50%, rgba(0,0,0,0) 100%) url("./backgrounds/02.png"); /* FF3.6-15 */
+
+background: -webkit-linear-gradient(left,  rgba(33,33,33,0.65) 0%,rgba(33,33,33,0.33) 50%,rgba(0,0,0,0) 100%) url("./backgrounds/02.png"); /* Chrome10-25,Safari5.1-6 */
+
+background: linear-gradient(to right,  rgba(33,33,33,0.65) 0%,rgba(33,33,33,0.33) 50%,rgba(0,0,0,0) 100%), url("./backgrounds/04.jpg"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6212121', endColorstr='#00000000',GradientType=1 ) url("./backgrounds/02.png"); /* IE6-9 */
+
+
+
 	background-size: cover;
 	background-repeat: none;
-	display: flex;
-  	justify-content: center;
-  	flex-direction: column;
 	margin: 0;
 }
 
+h1 {
+	color: #fff;
+	font-size: 40px;
+	font-weight: 100;
+	padding-left: 20px;
+	margin: 50px 0 0 0;
+}
+
+h2 {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 400;
+	padding-left: 20px;
+	margin: 10px 0;
+}
+
+
 .bg {
-	background: rgba(0, 0, 0, 0.3);
-	height: 150px;
-	width: 300px;
-	border-radius: 5px;
-	box-shadow: 0px 2px 50px rgba(0,0,0,0.30);
-	margin: 0 auto;
+
+background: -moz-linear-gradient(top,  rgba(33,33,33,0.65) 0%, rgba(33,33,33,0.33) 50%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+
+background: -webkit-linear-gradient(top,  rgba(33,33,33,0.65) 0%,rgba(33,33,33,0.33) 50%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+
+background: linear-gradient(to bottom,  rgba(33,33,33,0.65) 0%,rgba(33,33,33,0.33) 50%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6212121', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+
+	width: 100%;
+	border-radius: 3px;
 	padding: 20px 0 0 0; 
-	 -webkit-animation: fadein 850ms; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 850ms; /* Firefox < 16 */
-        -ms-animation: fadein 850ms; /* Internet Explorer */
-         -o-animation: fadein 850ms; /* Opera < 12.1 */
-            animation: fadein 850ms;
+	/* -webkit-animation: fadein 850ms; /* Safari, Chrome and Opera > 12.1 */
+      /* -moz-animation: fadein 850ms;  Firefox < 16 */
+       /* -ms-animation: fadein 850ms;  Internet Explorer */
+       /*   -o-animation: fadein 850ms; Opera < 12.1 */
+            /* animation: fadein 850ms; */
 			
 }
 
@@ -44,11 +75,6 @@ body {
 	
 }
 
-.logocontent {
-	margin: 0 auto;
-	width: 295px;
-	
-}
 
 
 @keyframes fadein {
@@ -82,35 +108,72 @@ body {
 
 
 .signin {
-	margin: 0 auto;
-	margin-top: 5px;
+	border: 0;
+	margin: 5px 0 0 50px;
 	box-shadow: 0px 0px 30px rgba(0,0,0,0.25);
-	opacity: 0.75;
-	background: rgba(240,240,240,0.90);
+	opacity: 1;
+	background: #F44336;
 	height: 25px;
 	width: 100px;
-	border-radius: 5px;
-	color: #d63234;
+	border-radius: 120px;
+	color: #fff;
 	text-decoration: none;
 	text-align: center;
-	padding: 7px 0 0 0;
-	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
-   	transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
+	font-size: 13px;
+	font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   	transition: opacity 1s ease-in-out;
+   -moz-transition: opacity 1s ease-in-out;
+   -webkit-transition: opacity 1s ease-in-out;
+	
+}
+
+form {
+	margin: 20px 0;
+	text-align: left;
+	color: white;
+	font-size: 12px;
+	padding-left: 20px;
+	font-weight: 300;
+}
+
+input {
+	margin: 5px 0;
+	border: 0;
+	border-radius: 1px;
+	height: 30px;
+	width: 200px;
+	background: #ECECEC;
+	opacity: 1;
+	text-align: center;
+	font-size: 20px;
+	font-family:'Roboto', Helvetica, Arial, sans-serif;
 	
 }
 
 .signin:hover {
-	box-shadow: 0px 0px 30px rgba(0,0,0,0.25);
-	opacity: 1.0;
+	/* background: rgba(0,0,0,0.1);
+	border: #F44336 solid 2px; */
+	background: #D32F2F;
+	border: #F44336 solid 1px;
+	
+}
+
+.logocontent {
+	height: 100%;
+}
+
+.loginbox {
+	margin-left: 40px;
+	width: 40%;
+	height: 100%;
+	vertical-align: center;
 }
 
 .version {
-	margin: 5px 0;
-	text-align: center;
-	color: rgba(0,0,0,0.3);
+	text-align: right;
+	padding: 0 40px;
+	color: rgba(255,255,255,0.0);
 }
 
 @media only screen and (max-width: 600px) {
