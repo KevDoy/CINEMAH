@@ -25,6 +25,42 @@ body {
             animation: fadein 3s;
 			
 }
+.covercontainer {
+	margin: 0 auto;
+	height: 220px;
+	width: 150px;
+	display: inline block;
+	float: left;
+}
+/* .unwatched {
+	background: url(new.png);
+	width: 32px;
+	height: 32px;
+	visibility: visible;
+	display:inline;
+	position: fixed;
+	text-align: right;
+	align-content:right;
+	z-index: 600;
+	border-radius: 100%;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+} */
+
+.coverlink {
+	width: 10px;
+    content: " ";
+    background: none;
+	border-radius: 100%;
+	background: #7C4DFF;
+    position: absolute;
+    height:10px;
+	z-index: -1
+	
+}
+
+.coverlink:visited {
+		background: #fff;
+	}
 
 
 .bg a{
@@ -32,8 +68,7 @@ body {
 }
 
 .logocontent {
-	margin: 0 auto;
-	width: 295px;
+
 	
 }
 
