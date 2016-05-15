@@ -14,9 +14,19 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
 <script src="js/login.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript"> 
+var totalCount = 15;
+function ChangeIt() 
+{
+var num = Math.ceil( Math.random() * totalCount );
+document.body.background = 'backgrounds/'+num+'.gif';
+document.body.style.backgroundRepeat = "repeat";// Background repeat
+}
+</script>
 </head>
 
 <body>
+<div class="gradient">
 <div class="bg">
 	<div class="logocontent">
 	<img src="./logo.png" height="90px" alt="CINEMAH" />
@@ -35,6 +45,9 @@ Password<br><input type="password" name="pass" id="pass"><br>
 <input type="submit" value="Sign In" class="signin">
 </form>
 </div>
-
+</div>
 </body>
+<script type="text/javascript"> 
+ChangeIt();
+</script> 
 </html>
