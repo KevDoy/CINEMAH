@@ -1,0 +1,16 @@
+{
+    "name": "Cinemah",
+    "short_name": "Cinemah",
+    "description": "Free online movies",
+    "icons": [
+        {
+            "src": "favicon-mobile.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "theme_color": "#c91d2b",
+    "background_color": "#c91d2b"
+}

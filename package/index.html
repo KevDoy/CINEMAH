@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Cinemah</title>
+	<!-- Bootstrap -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/addons/flag.min.css" rel="stylesheet">
+	<link href="css/lity.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="apple-touch-icon" href="favicon.png">
+	<link rel="manifest" href="cinemah.webmanifest">
+	<link rel="apple-touch-startup-image" href="/img/logo-red.png">
+</head>
+
+<body>
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Category Heading -->
+		<section>
+			<div class="container">
+				<div class="row headline text-center">
+					<div class="col">
+						<h1><img src="../img/logo.png" alt="Cinemah" class="sitelogo"></h1>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h4>Full Movies</h4>
+					</div>
+				</div>
+				<div class="row mt-3 pb-3" id="fullmovies">
+				</div>
+
+			</div>
+		</section>
+	</div>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h4>Fan Edits</h4>
+				</div>
+			</div>
+			<div class="row mt-3" id="fanedits">
+
+
+			</div>
+			<div class="row">
+				<div class="col line"></div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h4>TV Shows</h4>
+				</div>
+			</div>
+			<div class="row mt-3" id="tvshows">
+
+
+			</div>
+			<div class="row">
+				<div class="col line"></div>
+			</div>
+
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h4>Comedy Specials</h4>
+				</div>
+			</div>
+			<div class="row mt-3" id="comedyspecials">
+
+
+			</div>
+			<div class="row">
+				<div class="col line"></div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/1.4.0/json2html.min.js"></script>
+	
+	<script type="text/javascript">
+		var data;
+		$.getJSON("../data/fullmovies.json", function (json) {
+			data = json;
+			var transform = {
+				"<>": "div", "class": "col-6 col-md-4", "html": [
+					{
+						"<>": "a", "href": "${vidurl}", "data-lity": "", "html": [
+							{
+								"<>": "img", "src": "https://img.youtube.com/vi/${ytid}/hq720.jpg", "class": "img-fluid", "alt": "${movietitle}"
+							},
+							{ "<>": "p", "class": "mt-2", "html": "${movietitle}" }
+
+						]
+					}
+				]
+
+			};
+			$(function () {
+
+				//Create the list
+				$('#fullmovies').json2html(data, transform);
+			});
+		});
+
+	</script>
+	<script type="text/javascript">
+		var data;
+		$.getJSON("../data/fanedits.json", function (json) {
+			data = json;
+			var transform = {
+				"<>": "div", "class": "col-6 col-md-4", "html": [
+					{
+						"<>": "a", "href": "${vidurl}", "data-lity": "", "html": [
+							{
+								"<>": "img", "src": "https://img.youtube.com/vi/${ytid}/hq720.jpg", "class": "img-fluid", "alt": "${movietitle}"
+							},
+							{ "<>": "p", "class": "mt-2", "html": "${movietitle}" }
+						]
+					}
+				]
+
+			};
+			$(function () {
+
+				//Create the list
+				$('#fanedits').json2html(data, transform);
+			});
+		});
+
+	</script>
+
+	<script type="text/javascript">
+		var data;
+		$.getJSON("../data/comedy.json", function (json) {
+			data = json;
+			var transform = {
+				"<>": "div", "class": "col-6 col-md-4", "html": [
+					{
+						"<>": "a", "href": "${vidurl}", "data-lity": "", "html": [
+							{
+								"<>": "img", "src": "https://img.youtube.com/vi/${ytid}/hq720.jpg", "class": "img-fluid", "alt": "${movietitle}"
+							},
+							{ "<>": "p", "class": "mt-2", "html": "${movietitle}" }
+
+						]
+					}
+				]
+
+			};
+			$(function () {
+
+				//Create the list
+				$('#comedyspecials').json2html(data, transform);
+			});
+		});
+
+	</script>
+
+	<script type="text/javascript">
+		var data;
+		$.getJSON("../data/tvshows.json", function (json) {
+			data = json;
+			var transform = {
+				"<>": "div", "class": "col-6 col-md-4", "html": [
+					{
+						"<>": "a", "href": "${vidurl}", "data-lity": "", "html": [
+							{
+								"<>": "img", "src": "${imgurl}", "class": "img-fluid", "alt": "${movietitle}"
+							},
+							{ "<>": "p", "class": "mt-2", "html": "${movietitle}" }
+
+						]
+					}
+				]
+
+			};
+			$(function () {
+
+				//Create the list
+				$('#tvshows').json2html(data, transform);
+			});
+		});
+
+	</script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/lity.min.js"></script>
+
+
+	<!-- TV Show: Kitchen Nightmares -->
+	<div class="lity-hide" id="tv-kitchennightmares">
+		<div class="container">
+			<div class="row">
+				<h3 class="text-white">Kitchen Nightmares</h3>
+			</div>
+			<div class="row">
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PLW5iCJIwM9Z_t2nmZGbuqd0rjagbxsna-" target="_blank"><img
+							src="https://i.ytimg.com/vi/umCPdkAw7m8/hq720.jpg" class="img-fluid"
+							alt="">
+						<p class="mt-2 text-white">Kitchen Nightmares: Season 1</p>
+					</a></div>
+
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PLW5iCJIwM9Z_X-djnm07ZfAoxzuyorjUV" target="_blank"><img
+							src="https://i.ytimg.com/vi/NCeD-MuYnVw/hq720.jpg" class="img-fluid"
+							alt="">
+						<p class="mt-2 text-white">Kitchen Nightmares: Season 2</p>
+					</a></div>
+
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PLW5iCJIwM9Z-olFtuDSJfGlYfyPm-YkyU" target="_blank"><img
+							src="https://i.ytimg.com/vi/7T_nP-JrQ1I/hq720.jpg" class="img-fluid"
+							alt="">
+						<p class="mt-2 text-white">Kitchen Nightmares: Season 3</p>
+					</a></div>
+
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PLW5iCJIwM9Z9bE9qwKNdAsoeI01vA9lBq" target="_blank"><img
+							src="https://i.ytimg.com/vi/fEv1ILJS1bE/hq720.jpg" class="img-fluid"
+							alt="=">
+						<p class="mt-2 text-white">Kitchen Nightmares: Season 4</p>
+					</a></div>
+
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PLW5iCJIwM9Z_aoI96ofsa6m8QBoBJ2_9L" target="_blank"><img
+							src="https://i.ytimg.com/vi/_Ne7zRoSCPY/hq720.jpg" class="img-fluid"
+							alt="=">
+						<p class="mt-2 text-white">Kitchen Nightmares: Season 5</p>
+					</a></div>
+
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PLW5iCJIwM9Z8JWUQ4KiOwYJoklRrvDwwR" target="_blank"><img
+							src="https://i.ytimg.com/vi/bDAjkZFactQ/hq720.jpg" class="img-fluid"
+							alt="">
+						<p class="mt-2 text-white">Kitchen Nightmares: Season 6</p>
+					</a></div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- TV Show: Peep Show -->
+	<div class="lity-hide" id="tv-peepshow">
+		<div class="container">
+			<div class="row">
+				<h3 class="text-white">Peep Show</h3>
+			</div>
+			<div class="row">
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PLAbD_h_-ygfEZhseNesJpavtR0ojUIJRe" target="_blank"><img
+							src="https://i.ytimg.com/vi/fNzXkyy_Yrg/hq720.jpg" class="img-fluid"
+							alt="Peep Show: Season 1">
+						<p class="mt-2 text-white">Peep Show: Season 1</p>
+					</a></div>
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PLAbD_h_-ygfFPZbGGnRo-XGw5jlULCP_C" target="_blank"><img
+							src="https://i.ytimg.com/vi/j34-5AZabOk/hq720.jpg" class="img-fluid"
+							alt="Peep Show: Season 2">
+						<p class="mt-2 text-white">Peep Show: Season 2</p>
+					</a></div>
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PLi_lCHLfFoE5KyAyJTtfWiDTYmBKonUwg" target="_blank"><img
+							src="https://i.ytimg.com/vi/feJlRDLX0iQ/hq720.jpg" class="img-fluid"
+							alt="Peep Show: Season 3">
+						<p class="mt-2 text-white">Peep Show: Season 3</p>
+					</a></div>
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PL3RQ8yt-SeFywrKncUDJrxIfu4Uf6zzPV" target="_blank"><img
+							src="https://i.ytimg.com/vi/gRpcG2o_OvY/hq720.jpg" class="img-fluid"
+							alt="Peep Show: Season 4">
+						<p class="mt-2 text-white">Peep Show: Season 4</p>
+					</a></div>
+				<div class="col-6 col-md-4"><a
+						href="https://www.youtube.com/playlist?list=PLi_lCHLfFoE5ju0D7vXkh7oZKeMXthhMZ"
+						target="_blank"><img src="https://i.ytimg.com/vi/DkYHNO2vNG4/hq720.jpg" class="img-fluid"
+							alt="Peep Show: Season 5">
+						<p class="mt-2 text-white">Peep Show: Season 5</p>
+					</a></div>
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PLolCyPQEWbf9YDS-6-JXgFntrPDFOyxcA" target="_blank"><img
+							src="https://i.ytimg.com/vi/0SCkclNmhgo/hq720.jpg" class="img-fluid"
+							alt="Peep Show: Season 6">
+						<p class="mt-2 text-white">Peep Show: Season 6</p>
+					</a></div>
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PLolCyPQEWbf-86BZOfBxyBe6fJF54pGpo" target="_blank"><img
+							src="https://i.ytimg.com/vi/xLGtPAtceiA/hq720.jpg" class="img-fluid"
+							alt="Peep Show: Season 7">
+						<p class="mt-2 text-white">Peep Show: Season 7</p>
+					</a></div>
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PLhHRuJteYQwyoYfqmIz5LRtlZ2CdQVc8Z" target="_blank"><img
+							src="https://i.ytimg.com/vi/u6MJkcL4KOY/hq720.jpg" class="img-fluid"
+							alt="Peep Show: Season 8">
+						<p class="mt-2 text-white">Peep Show: Season 8</p>
+					</a></div>
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PLEa-ZA4WwF0B8ptgQg6WaBVeULXbVDLTR" target="_blank"><img
+							src="https://i.ytimg.com/vi/Vcky5mhZcYs/hq720.jpg" class="img-fluid"
+							alt="Peep Show: Season 9">
+						<p class="mt-2 text-white">Peep Show: Season 9</p>
+					</a></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- TV Show: Friday Night Dinner -->
+	<div class="lity-hide" id="tv-fridaynightdinner">
+		<div class="container">
+			<div class="row">
+				<h3 class="text-white">Friday Night Dinner</h3>
+			</div>
+			<div class="row">
+				<div class="col-6 col-md-4"><a
+						href="https://youtube.com/playlist?list=PL4i6s1mcHi791jq0THeQYOdGQwMFpyyW2" target="_blank"><img
+							src="https://yt3.googleusercontent.com/cXP1Z4KM-X8tsPH5hPJHp3FRuMge6mZ_a0jXjzvyGITDj_tot42tuMWXExLau4iR0-ODOZkOcQ" class="img-fluid"
+							alt="">
+						<p class="mt-2 text-white">Friday Night Dinner: Season 1</p>
+					</a></div>
+
+				<div class="col-6 col-md-4"><a
+					href="https://youtube.com/playlist?list=PL4i6s1mcHi7-vgLdhYc5YhYFZLDbc0KYF" target="_blank"><img
+						src="https://i.ytimg.com/vi/zyYzwAw9PeM/hq720.jpg" class="img-fluid"
+						alt="">
+					<p class="mt-2 text-white">Friday Night Dinner: Season 2</p>
+				</a></div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+
+</html>

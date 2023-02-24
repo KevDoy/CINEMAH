@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	font-family: 'Roboto', sans-serif!important;
+	color: #0e0e0e;
+}
+h1, h2, h3, h4 {
+	font-weight: 700!important;
+}
+a, a:hover {
+	text-decoration: none;
+}
+.headline {
+	padding: 40px 0 40px 0;
+}
+.line {
+	 border-bottom: 1px solid #7c7b7b32; 
+	margin: 20px 0;
+}
+img {
+	border-radius: 10px;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.5);
+	transition: 0.3s;
+}
+img:hover {
+	opacity: 0.8;
+	transition: 0.3s;
+}
+.sitelogo, .sitelogo:hover {
+	box-shadow: 0 5px 20px 0 rgba(0,0,0,0);
+	opacity: 1;
+	width: 200px
+}
+.featured:nth-child(n+5) {
+	margin-top: 20px;
+}
+.topseller:nth-child(n+4) {
+	margin-top: 20px;
+}
+
+.countryselect, .countryselect:hover {
+	color: black;
+	text-decoration: none;
+}
+#wrapper {
+	background-image: url("/img/bg-hero.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-color: #d7473c;
+	margin-bottom: 30px;
+}
+#wrapper h4, #wrapper p {
+	color: #ffffff!important;
+}
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+	body {
+		background: #19171a;
+	}	
+	* {
+		color: #f4f2f2!important;
+	}
+
+}
+
+/*Lity Edits*/
+.lity {
+	background: rgba(0,0,0,0.8);
+	backdrop-filter: saturate(180%) blur(20px);
+}
+.lity-content:after {
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0); 
+}
