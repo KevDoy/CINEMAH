@@ -4,6 +4,11 @@
 	font-family: 'Roboto', sans-serif!important;
 	color: #0e0e0e;
 }
+.montserrat-title {
+	font-family: 'Montserrat', sans-serif!important;
+	color: #fff!important;
+	text-transform: uppercase;
+}
 h1, h2, h3, h4 {
 	font-weight: 700!important;
 }
@@ -29,7 +34,7 @@ img:hover {
 .sitelogo, .sitelogo:hover {
 	box-shadow: 0 5px 20px 0 rgba(0,0,0,0);
 	opacity: 1;
-	width: 200px
+	width: 75px
 }
 .featured:nth-child(n+5) {
 	margin-top: 20px;
