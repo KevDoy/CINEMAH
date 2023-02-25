@@ -3,8 +3,8 @@
 
 CINEMAH (ver. 0.5) is a simple HTML and CSS based video organization interface that aims to be easy to edit and host by anyone. It is designed to be responsive and accessed both on Desktop and Mobile devices. It is currently designed to be hosted on a server, but an offline version is coming soon.
 
-![screenshot](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/screenshot2.png "CINEMAH Landing Page")
-![screenshot2](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/screenshot.png "CINEMAH Selection Screen")
+![screenshot](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/screenshot.jpg "CINEMAH Main Page")
+![screenshot2](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/screenshot2.jpg "CINEMAH TV Show Overlay")
 ## To add Movies...
 
 Open the index.html inside of the start folder and edit the following:
