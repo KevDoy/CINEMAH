@@ -86,12 +86,12 @@ Inside the HTML you'll see a TV show structured like this at the bottom of the p
 
 	</div>
 `
-The links ideally link to a full season of a TV Show with a thumbnail image that fits the season attached in the image source. Below, you'll describe what the title is. For example: "Kitchen Nightmares: Season 1".
+The links ideally link to a YouTube playlist that contains a full season of a TV Show with a thumbnail image that fits the season attached in the image source. Below, you'll describe what the title is. For example: "Kitchen Nightmares: Season 1".
 
 
 ## Motivation
 
-YouTube often has great shows uploaded, but when you're binging, searching for the next episode can really take you out of the binging experience. Cinemah allows you to binge without interruption.
+YouTube often has great shows uploaded, but when you're binging, searching for the next episode can really take you out of the experience. Cinemah allows you to binge without interruptions by organizing the content you find ahead of time.
 
 ![screenshot3](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/screenshot3.gif "CINEMAH TV Show binge experience")
 
