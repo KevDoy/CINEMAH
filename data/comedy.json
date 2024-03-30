@@ -1,5 +1,10 @@
 [
 	{
+		"ytid": "rWyWSjMibaI",
+        "vidurl": "#tv-normlive",
+        "movietitle": "Norm Macdonald Live"
+	},
+	{
 		"ytid": "tDolNU89SXI",
         "vidurl": "https://www.youtube.com/watch?v=tDolNU89SXI",
         "movietitle": "Mark Normand: Out to Lunch"
@@ -13,7 +18,11 @@
 		"ytid": "rCZkp023MdY",
         "vidurl": "https://www.youtube.com/watch?v=rCZkp023MdY",
         "movietitle": "Andrew Schulz: Infamous"
+	},
+	{
+		"ytid": "gWBms-SJ9fI",
+        "vidurl": "https://www.youtube.com/watch?v=gWBms-SJ9fI",
+        "movietitle": "Remembering Norm Macdonald"
 	}
-
 
 ]
