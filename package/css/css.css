@@ -73,6 +73,7 @@ img:hover {
 .lity {
 	background: rgba(0,0,0,0.8);
 	backdrop-filter: saturate(180%) blur(20px);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
 }
 .lity-content:after {
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0);
