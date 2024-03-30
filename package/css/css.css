@@ -26,10 +26,12 @@ img {
 	border-radius: 10px;
 	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.5);
 	transition: 0.3s;
+	opacity: 0.85
 }
 img:hover {
-	opacity: 0.8;
+	opacity: 1;
 	transition: 0.3s;
+	transform: scale(1.05)
 }
 .sitelogo, .sitelogo:hover {
 	box-shadow: 0 5px 20px 0 rgba(0,0,0,0);
@@ -71,7 +73,7 @@ img:hover {
 
 /*Lity Edits*/
 .lity {
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.5);
 	backdrop-filter: saturate(180%) blur(20px);
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
 }
