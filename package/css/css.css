@@ -33,6 +33,11 @@ img:hover {
 	transition: 0.3s;
 	transform: scale(1.05)
 }
+img:active {
+	opacity: 0;
+	transition: 1s;
+	transform: scale(3);
+}
 .sitelogo, .sitelogo:hover {
 	box-shadow: 0 5px 20px 0 rgba(0,0,0,0);
 	opacity: 1;
