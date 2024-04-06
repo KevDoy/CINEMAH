@@ -3,6 +3,9 @@
 
 CINEMAH (ver. 1.0) is a simple web based based video organization interface that help you organize movies and TV shows that you find across the web (ie. YouTube, Google Drive, etc). It is designed to be responsive and accessed both on Desktop and Mobile devices and can be installed as web app on Android, iOS and iPadOS.
 
+Website: https://cinemah.net
+Preview/Demo Site: https://kevdoy.github.io/CINEMAH/
+
 ![screenshot](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/screenshot.jpg "CINEMAH Main Page")
 
 ![screenshot2](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/screenshot2.jpg "CINEMAH TV Show Overlay")
