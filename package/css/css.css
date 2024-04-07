@@ -86,3 +86,6 @@ img:active {
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0); 
 }
+.lity-hidden {
+	overflow: auto!important;
+}
