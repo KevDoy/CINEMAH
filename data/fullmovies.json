@@ -1,19 +1,39 @@
 [
 	
 	{
-		"ytid": "fgIvCHbBChs",
+		"ytid": "bupOXE5nFDE",
+        "vidurl": "https://www.youtube.com/watch?v=bupOXE5nFDE",
+        "movietitle": "The Social Network"
+	},
+	{
+		"ytid": "CpBLtXduh_k",
+        "vidurl": "https://www.youtube.com/watch?v=ptciSRZwOis",
+        "movietitle": "Palm Springs"
+	},
+	{
+		"ytid": "37-51ZeKWFQ",
         "vidurl": "https://www.youtube.com/watch?v=K-WxuM-gFwE",
         "movietitle": "Inglourious Basterds"
 	},
 	{
-		"ytid": "PO1Bxyi3hXc",
-        "vidurl": "https://www.youtube.com/watch?v=gwOaQ4ekuqk",
-        "movietitle": "Le Petit Soldat"
-	},
-	{
-		"ytid": "BJy-omB4se8",
+		"ytid": "oCtNdjjHCXA",
         "vidurl": "https://www.youtube.com/watch?v=qdIJ2MprXoQ",
         "movietitle": "Django Unchained"
+	},
+	{
+		"ytid": "ikvG12nLJRk",
+        "vidurl": "https://archive.org/download/true-lies-1994-d-theater/True%20Lies%20%281994%29%20%5BD-Theater%5D.mp4",
+        "movietitle": "True Lies"
+	},
+	{
+		"ytid": "rW1-q3PxUb4",
+        "vidurl": "https://www.youtube.com/watch?v=Y4v8abG94CU",
+        "movietitle": "Baby Driver"
+	},
+	{
+		"ytid": "WU-Lt99K2XY",
+        "vidurl": "https://www.youtube.com/watch?v=FsTw0TPYXWE",
+        "movietitle": "Slumdog Millionaire"
 	},
 	{
 		"ytid": "nA8KmHC2Z-g",
@@ -26,14 +46,19 @@
         "movietitle": "Secret of the Incas"
 	},
 	{
-		"ytid": "ikvG12nLJRk",
-        "vidurl": "https://archive.org/download/true-lies-1994-d-theater/True%20Lies%20%281994%29%20%5BD-Theater%5D.mp4",
-        "movietitle": "True Lies"
+		"ytid": "b_3Wb1jicX4",
+        "vidurl": "https://www.youtube.com/watch?v=_f4ICPmm1gk",
+        "movietitle": "Zero Dark Thirty"
 	},
 	{
-		"ytid": "ZsAo3G6M_EI",
-        "vidurl": "https://www.youtube.com/watch?v=Y4v8abG94CU",
-        "movietitle": "Baby Driver"
+		"ytid": "OW9pfAM0Vek",
+        "vidurl": "https://www.youtube.com/watch?v=Z5iNR8-eB5Q",
+        "movietitle": "Walk Hard: The Dewey Cox Story"
+	},
+	{
+		"ytid": "v1114pRZREg",
+        "vidurl": "https://www.pokeflix.tv/v/pokemon-movie-mewtwo-strikes-back",
+        "movietitle": "Pokémon - Mewtwo Strikes Back"
 	}
 
 ]
