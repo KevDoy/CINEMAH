@@ -22,104 +22,151 @@
 </head>
 
 <body>
-	<!-- Wrapper -->
-	<div id="wrapper">
-		<!-- Category Heading -->
+	<div>
 		<section>
-			<div class="container">
-				<div class="row headline text-center">
-					<div class="col">
-						<h1 class="montserrat-title"><img src="../img/logo-icon.png" class="sitelogo"> Cinemah</h1>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col text-center">
+						<h1><img src="../img/logo.png" alt="Lapflix" class="sitelogo"></h1>
+					</div>
+				</div>
+			</div>
+			<div class="container overflow-hidden featured-hero">
+
+
+				<div class="row">
+					<div id="featuredHeroCarousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators" id="featuredHeroIndicators">
+						</ol>
+						<div class="carousel-inner" id="featured">
+
+						</div>
 					</div>
 
-				</div>
 
-			</div>
+				</div>
 		</section>
 
 		<section>
-			<div class="container">
+			<div class="container mt-5">
 				<div class="row">
-					<div class="col">
-						<h4>Full Movies</h4>
+
+					<!-- Browse Title and Back Navigation -->
+					<div class="col-12 browseTitle">
+						<span id="backToBrowse" class="d-none d-lg-none"
+							onclick="categorySwitch('.catLinkAll'); $('#backToBrowse').addClass('d-none'); ">
+							<img src="../img/back-arrow.svg" height="30"> Back to </span>
+						<span class=""
+							onclick="categorySwitch('.catLinkAll'); $('#backToBrowse').addClass('d-none'); ">Browse</span>
+						<span></span>
 					</div>
-				</div>
-				<div class="row mt-3 pb-3" id="fullmovies">
+
+					<!-- Category Links -->
+					<div class="col-12 col-lg-4 catLinkAll d-lg-block">
+						<span class="catLink" onclick="categorySwitch('#fullmovies')">Movies</span>
+						<span class="catLink" onclick="categorySwitch('#tvshows')">TV Shows</span>
+						<span class="catLink" onclick="categorySwitch('#comedyspecials')">Comedy</span>
+						<span class="catLink" onclick="categorySwitch('#live')">Live</span>
+						<span class="catLink" onclick="categorySwitch('#unwind')">Unwind</span>
+						<span class="catLink" onclick="categorySwitch('#games')">Games</span>
+					</div>
+
+					<!-- Category Contents -->
+					<div class="col-12 col-lg-8" style="min-height: 700px;">
+						<div class="row mt-3 pb-3 d-none" id="fullmovies">
+							<div class="col-12 d-lg-none">
+								<p class="mobileCatTitle">Movies</p>
+							</div>
+						</div>
+						<div class="row mt-3 d-none" id="fanedits">
+							<div class="col-12 d-lg-none">
+								<p class="mobileCatTitle">Fan Edits</p>
+							</div>
+						</div>
+						<div class="row mt-3 d-none" id="tvshows">
+							<div class="col-12 d-lg-none">
+								<p class="mobileCatTitle">TV Shows</p>
+							</div>
+						</div>
+						<div class="row mt-3 d-none" id="comedyspecials">
+							<div class="col-12 d-lg-none">
+								<p class="mobileCatTitle">Comedy</p>
+							</div>
+						</div>
+						<div class="row live d-none" id="live">
+							<div class="col-12 d-lg-none">
+								<p class="mobileCatTitle">Live</p>
+							</div>
+						</div>
+						<div class="row mt-3 d-none" id="unwind">
+							<div class="col-12 d-lg-none">
+								<p class="mobileCatTitle">Unwind</p>
+							</div>
+						</div>
+						<div class="row mt-3 d-none" id="games">
+							<div class="col-12 d-lg-none">
+								<p class="mobileCatTitle">Games</p>
+							</div>
+						</div>
+					</div>
+
 				</div>
 
 			</div>
 		</section>
 	</div>
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h4>Fan Edits</h4>
-				</div>
-			</div>
-			<div class="row mt-3" id="fanedits">
 
-
-			</div>
-			<div class="row">
-				<div class="col line"></div>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h4>TV Shows</h4>
-				</div>
-			</div>
-			<div class="row mt-3" id="tvshows">
-
-
-			</div>
-			<div class="row">
-				<div class="col line"></div>
-			</div>
-
-		</div>
-	</section>
-
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h4>Comedy Specials</h4>
-				</div>
-			</div>
-			<div class="row mt-3" id="comedyspecials">
-
-
-			</div>
-			<div class="row">
-				<div class="col line"></div>
-			</div>
-		</div>
-	</section>
 	<footer>
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
-					<small>Based on <a href="https://cinemah.net/">CINEMAH</a></small>
+					<small>Based on <a href="https://cinemah.net/">CINEMAH</a><br>This site does not host any copyrighted content.</small>
 				</div>
 			</div>
-			<div class="row mt-3" id="comedyspecials">
 
 
-			</div>
-			
 		</div>
 	</footer>
-	
-	
+
+	<div id="tvShowContent">
+
+	</div>
+
+
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/1.4.0/json2html.min.js"></script>
-	
+	<script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.js"></script>
+
+	<!-- Live -->
+	<script type="text/javascript">
+		var data;
+		$.getJSON("../data/live.json", function (json) {
+			data = json;
+			var transform = {
+				"<>": "div", "class": "col-6 col-md-4", "html": [
+					{
+						"<>": "a", "href": "${herolink}", "html": [
+							{
+								"<>": "img", "src": "${heroimage}", "class": "img-fluid videoImg", "alt": "${movietitle}"
+							},
+							{ "<>": "p", "class": "mt-2", "html": "${movietitle}" }
+
+						]
+					}
+				]
+
+			};
+			$(function () {
+
+				//Create the list
+				$('#live').json2html(data, transform);
+			});
+		});
+
+	</script>
+
+	<!-- Full Movies -->
 	<script type="text/javascript">
 		var data;
 		$.getJSON("../data/fullmovies.json", function (json) {
@@ -129,7 +176,7 @@
 					{
 						"<>": "a", "href": "${vidurl}", "data-lity": "", "html": [
 							{
-								"<>": "img", "src": "https://img.youtube.com/vi/${ytid}/hq720.jpg", "class": "img-fluid", "alt": "${movietitle}"
+								"<>": "img", "src": "https://img.youtube.com/vi/${ytid}/hq720.jpg", "class": "img-fluid videoImg", "alt": "${movietitle}"
 							},
 							{ "<>": "p", "class": "mt-2", "html": "${movietitle}" }
 
@@ -144,8 +191,9 @@
 				$('#fullmovies').json2html(data, transform);
 			});
 		});
-
 	</script>
+
+	<!-- Fan Edits -->
 	<script type="text/javascript">
 		var data;
 		$.getJSON("../data/fanedits.json", function (json) {
@@ -155,7 +203,7 @@
 					{
 						"<>": "a", "href": "${vidurl}", "data-lity": "", "html": [
 							{
-								"<>": "img", "src": "https://img.youtube.com/vi/${ytid}/hq720.jpg", "class": "img-fluid", "alt": "${movietitle}"
+								"<>": "img", "src": "https://img.youtube.com/vi/${ytid}/hq720.jpg", "class": "img-fluid videoImg", "alt": "${movietitle}"
 							},
 							{ "<>": "p", "class": "mt-2", "html": "${movietitle}" }
 						]
@@ -172,6 +220,7 @@
 
 	</script>
 
+	<!-- Comedy -->
 	<script type="text/javascript">
 		var data;
 		$.getJSON("../data/comedy.json", function (json) {
@@ -181,7 +230,7 @@
 					{
 						"<>": "a", "href": "${vidurl}", "data-lity": "", "html": [
 							{
-								"<>": "img", "src": "https://img.youtube.com/vi/${ytid}/hq720.jpg", "class": "img-fluid", "alt": "${movietitle}"
+								"<>": "img", "src": "https://img.youtube.com/vi/${ytid}/hq720.jpg", "class": "img-fluid videoImg", "alt": "${movietitle}"
 							},
 							{ "<>": "p", "class": "mt-2", "html": "${movietitle}" }
 
@@ -199,6 +248,7 @@
 
 	</script>
 
+	<!-- TV Shows -->
 	<script type="text/javascript">
 		var data;
 		$.getJSON("../data/tvshows.json", function (json) {
@@ -208,7 +258,7 @@
 					{
 						"<>": "a", "href": "${vidurl}", "data-lity": "", "html": [
 							{
-								"<>": "img", "src": "${imgurl}", "class": "img-fluid", "alt": "${movietitle}"
+								"<>": "img", "src": "${imgurl}", "class": "img-fluid videoImg", "alt": "${movietitle}"
 							},
 							{ "<>": "p", "class": "mt-2", "html": "${movietitle}" }
 
@@ -225,471 +275,151 @@
 		});
 
 	</script>
+
+	<!-- Unwind -->
+	<script type="text/javascript">
+		var data;
+		$.getJSON("../data/unwind.json", function (json) {
+			data = json;
+			var transform = {
+				"<>": "div", "class": "col-6 col-md-4", "html": [
+					{
+						"<>": "a", "href": "${vidurl}", "data-lity": "", "html": [
+							{
+								"<>": "img", "src": "${imgurl}", "class": "img-fluid videoImg", "alt": "${movietitle}"
+							},
+							{ "<>": "p", "class": "mt-2", "html": "${movietitle}" }
+
+						]
+					}
+				]
+
+			};
+			$(function () {
+
+				//Create the list
+				$('#unwind').json2html(data, transform);
+			});
+		});
+
+	</script>
+
+	<!-- Games -->
+	<script type="text/javascript">
+		var data;
+		$.getJSON("../data/games.json", function (json) {
+			data = json;
+			var transform = {
+				"<>": "div", "class": "col-6 col-md-4", "html": [
+					{
+						"<>": "a", "href": "${vidurl}", "target": "_blank", "html": [
+							{
+								"<>": "img", "src": "${imgurl}", "class": "img-fluid videoImg", "alt": "${movietitle}"
+							},
+							{ "<>": "p", "class": "mt-2", "html": "${movietitle}" }
+
+						]
+					}
+				]
+
+			};
+			$(function () {
+
+				//Create the list
+				$('#games').json2html(data, transform);
+			});
+		});
+
+	</script>
+
+	<!-- Featured (Carousel Contents)-->
+	<script type="text/javascript">
+		var data;
+		$.getJSON("../data/featured.json", function (json) {
+			data = json;
+			var transform = {
+				"<>": "div", "class": "carousel-item ${activestatus}", "html": [
+					{ "<>": "img", "src": "../img/load2.jpg", "class": "d-block w-100" },
+					{ "<>": "div", "data-vbg": "${ytvideo}" },
+					{
+						"<>": "div", "class": "carousel-caption", "html": [
+							{
+								"<>": "a", "href": "${titleUrl}", "data-lity": "", "html": [
+									{
+										"<>": "h2", "html": "${title}"
+									},
+									{ "<>": "p", "html": "${description}" }
+								]
+							}
+						]
+					}
+				]
+
+			};
+			$(function () {
+
+				//Create the list
+				$('#featured').json2html(data, transform);
+			});
+		});
+
+	</script>
+
+	<!-- Featured (Carousel Indicators)-->
+	<script type="text/javascript">
+		var data;
+		$.getJSON("../data/featured.json", function (json) {
+			data = json;
+			var transform =
+			{
+				"<>": "li", "data-garget": "#featuredHeroCarousel", "data-slide-to": "${carouselNo}", "class": "${activestatus}"
+			};
+			$(function () {
+
+				//Create the list
+				$('#featuredHeroIndicators').json2html(data, transform);
+			});
+		});
+
+	</script>
+
+
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/lity.min.js"></script>
 
 
-	<!-- TV Show: Kitchen Nightmares -->
-	<div class="lity-hide" id="tv-kitchennightmares">
-		<div class="container">
-			<div class="row">
-				<h3 class="text-white">Kitchen Nightmares</h3>
-			</div>
-			<div class="row">
-				<div class="col-6 col-md-4"><a
-						href="https://youtube.com/playlist?list=PLW5iCJIwM9Z_t2nmZGbuqd0rjagbxsna-" target="_blank"><img
-							src="https://i.ytimg.com/vi/umCPdkAw7m8/hq720.jpg" class="img-fluid"
-							alt="">
-						<p class="mt-2 text-white">Kitchen Nightmares: Season 1</p>
-					</a></div>
+	<!-- Load Video Backgrounds -->
+	<script type="text/javascript">
+		jQuery(window).load(function () {
+			jQuery('[data-vbg]').youtube_background();
 
-				<div class="col-6 col-md-4"><a
-						href="https://youtube.com/playlist?list=PLW5iCJIwM9Z_X-djnm07ZfAoxzuyorjUV" target="_blank"><img
-							src="https://i.ytimg.com/vi/NCeD-MuYnVw/hq720.jpg" class="img-fluid"
-							alt="">
-						<p class="mt-2 text-white">Kitchen Nightmares: Season 2</p>
-					</a></div>
+			const videoBackgrounds = VIDEO_BACKGROUNDS;
+		});
+	</script>
 
-				<div class="col-6 col-md-4"><a
-						href="https://youtube.com/playlist?list=PLW5iCJIwM9Z-olFtuDSJfGlYfyPm-YkyU" target="_blank"><img
-							src="https://i.ytimg.com/vi/7T_nP-JrQ1I/hq720.jpg" class="img-fluid"
-							alt="">
-						<p class="mt-2 text-white">Kitchen Nightmares: Season 3</p>
-					</a></div>
+	<!-- Category Logic -->
+	<script>
+		function categorySwitch(categoryId) {
+			$('#fullmovies').addClass('d-none');
+			$('#fanedits').addClass('d-none');
+			$('#tvshows').addClass('d-none');
+			$('#comedyspecials').addClass('d-none');
+			$('#live').addClass('d-none');
+			$('#unwind').addClass('d-none');
+			$('#games').addClass('d-none');
+			$('.catLinkAll').addClass('d-none');
+			$('#backToBrowse').removeClass('d-none');
+			$(categoryId).removeClass('d-none');
+		}
+	</script>
 
-				<div class="col-6 col-md-4"><a
-						href="https://youtube.com/playlist?list=PLW5iCJIwM9Z9bE9qwKNdAsoeI01vA9lBq" target="_blank"><img
-							src="https://i.ytimg.com/vi/fEv1ILJS1bE/hq720.jpg" class="img-fluid"
-							alt="=">
-						<p class="mt-2 text-white">Kitchen Nightmares: Season 4</p>
-					</a></div>
-
-				<div class="col-6 col-md-4"><a
-						href="https://youtube.com/playlist?list=PLW5iCJIwM9Z_aoI96ofsa6m8QBoBJ2_9L" target="_blank"><img
-							src="https://i.ytimg.com/vi/_Ne7zRoSCPY/hq720.jpg" class="img-fluid"
-							alt="=">
-						<p class="mt-2 text-white">Kitchen Nightmares: Season 5</p>
-					</a></div>
-
-				<div class="col-6 col-md-4"><a
-						href="https://youtube.com/playlist?list=PLW5iCJIwM9Z8JWUQ4KiOwYJoklRrvDwwR" target="_blank"><img
-							src="https://i.ytimg.com/vi/bDAjkZFactQ/hq720.jpg" class="img-fluid"
-							alt="">
-						<p class="mt-2 text-white">Kitchen Nightmares: Season 6</p>
-					</a></div>
-			</div>
-		</div>
-
-	</div>
-
-	<!-- TV Show: Peep Show -->
-	<div class="lity-hide" id="tv-peepshow">
-		<div class="container">
-			<div class="row">
-				<h3 class="text-white">Peep Show</h3>
-			</div>
-			<div class="row">
-				<div class="col-6 col-md-4"><a
-						href="https://youtube.com/playlist?list=PLAbD_h_-ygfEZhseNesJpavtR0ojUIJRe" target="_blank"><img
-							src="https://i.ytimg.com/vi/fNzXkyy_Yrg/hq720.jpg" class="img-fluid"
-							alt="Peep Show: Season 1">
-						<p class="mt-2 text-white">Peep Show: Season 1</p>
-					</a></div>
-				<div class="col-6 col-md-4"><a
-						href="https://youtube.com/playlist?list=PLAbD_h_-ygfFPZbGGnRo-XGw5jlULCP_C" target="_blank"><img
-							src="https://i.ytimg.com/vi/j34-5AZabOk/hq720.jpg" class="img-fluid"
-							alt="Peep Show: Season 2">
-						<p class="mt-2 text-white">Peep Show: Season 2</p>
-					</a></div>
-				<div class="col-6 col-md-4"><a
-						href="https://youtube.com/playlist?list=PLi_lCHLfFoE5KyAyJTtfWiDTYmBKonUwg" target="_blank"><img
-							src="https://i.ytimg.com/vi/feJlRDLX0iQ/hq720.jpg" class="img-fluid"
-							alt="Peep Show: Season 3">
-						<p class="mt-2 text-white">Peep Show: Season 3</p>
-					</a></div>
-				<div class="col-6 col-md-4"><a
-						href="https://youtube.com/playlist?list=PL3RQ8yt-SeFywrKncUDJrxIfu4Uf6zzPV" target="_blank"><img
-							src="https://i.ytimg.com/vi/gRpcG2o_OvY/hq720.jpg" class="img-fluid"
-							alt="Peep Show: Season 4">
-						<p class="mt-2 text-white">Peep Show: Season 4</p>
-					</a></div>
-				<div class="col-6 col-md-4"><a
-						href="https://www.youtube.com/playlist?list=PLi_lCHLfFoE5ju0D7vXkh7oZKeMXthhMZ"
-						target="_blank"><img src="https://i.ytimg.com/vi/DkYHNO2vNG4/hq720.jpg" class="img-fluid"
-							alt="Peep Show: Season 5">
-						<p class="mt-2 text-white">Peep Show: Season 5</p>
-					</a></div>
-				<div class="col-6 col-md-4"><a
-						href="https://youtube.com/playlist?list=PLolCyPQEWbf9YDS-6-JXgFntrPDFOyxcA" target="_blank"><img
-							src="https://i.ytimg.com/vi/0SCkclNmhgo/hq720.jpg" class="img-fluid"
-							alt="Peep Show: Season 6">
-						<p class="mt-2 text-white">Peep Show: Season 6</p>
-					</a></div>
-				<div class="col-6 col-md-4"><a
-						href="https://youtube.com/playlist?list=PLolCyPQEWbf-86BZOfBxyBe6fJF54pGpo" target="_blank"><img
-							src="https://i.ytimg.com/vi/xLGtPAtceiA/hq720.jpg" class="img-fluid"
-							alt="Peep Show: Season 7">
-						<p class="mt-2 text-white">Peep Show: Season 7</p>
-					</a></div>
-				<div class="col-6 col-md-4"><a
-						href="https://youtube.com/playlist?list=PLhHRuJteYQwyoYfqmIz5LRtlZ2CdQVc8Z" target="_blank"><img
-							src="https://i.ytimg.com/vi/u6MJkcL4KOY/hq720.jpg" class="img-fluid"
-							alt="Peep Show: Season 8">
-						<p class="mt-2 text-white">Peep Show: Season 8</p>
-					</a></div>
-				<div class="col-6 col-md-4"><a
-						href="https://youtube.com/playlist?list=PLEa-ZA4WwF0B8ptgQg6WaBVeULXbVDLTR" target="_blank"><img
-							src="https://i.ytimg.com/vi/Vcky5mhZcYs/hq720.jpg" class="img-fluid"
-							alt="Peep Show: Season 9">
-						<p class="mt-2 text-white">Peep Show: Season 9</p>
-					</a></div>
-			</div>
-		</div>
-	</div>
-
-	<!-- TV Show: Friday Night Dinner -->
-	<div class="lity-hide" id="tv-fridaynightdinner">
-		<div class="container">
-			<div class="row">
-				<h3 class="text-white">Friday Night Dinner</h3>
-			</div>
-			<div class="row">
-				<div class="col-6 col-md-4"><a
-					href="https://youtube.com/playlist?list=PL4i6s1mcHi7-vgLdhYc5YhYFZLDbc0KYF" target="_blank"><img
-						src="https://i.ytimg.com/vi/zyYzwAw9PeM/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Friday Night Dinner: Season 2</p>
-				</a></div>
-			</div>
-		</div>
-	</div>
-
-	<!-- TV Show: WILTY -->
-	<div class="lity-hide" id="tv-wouldILieToYou">
-		<div class="container">
-			<div class="row">
-				<h3 class="text-white">Would I Lie To You?</h3>
-			</div>
-			<div class="row">
-				<div class="col-6 col-md-4"><a
-						href="https://www.youtube.com/playlist?list=PLc0fG_3lLqmJ2V-p1DOE8_gYgBwP48-YQ" target="_blank"><img
-							src="https://i.ytimg.com/vi/mEb-BBHWWgo/hq720.jpg" class="img-fluid"
-							alt="">
-						<p class="mt-2 text-white">WILTY: Season 1</p>
-					</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLc0fG_3lLqmLDqcXv1889xm9mSU_FD67j" target="_blank"><img
-						src="https://i.ytimg.com/vi/g2tLYJ74nnI/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">WILTY: Season 2</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLc0fG_3lLqmKPQtVH2ckOgEnqGpkNGs8m" target="_blank"><img
-						src="https://i.ytimg.com/vi/vRJWwZhZgKg/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">WILTY: Season 3</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLc0fG_3lLqmJYzrGB5A2APJ-QR5AYTqdA" target="_blank"><img
-						src="https://i.ytimg.com/vi/k3yqHgBCX7M/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">WILTY: Season 4</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLc0fG_3lLqmKwW23d33xYn2C4yF8cMVzW" target="_blank"><img
-						src="https://i.ytimg.com/vi/WQqUcjX1AOo/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">WILTY: Season 5</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLc0fG_3lLqmJOISDLzO6Jp92VnoF_rxYe" target="_blank"><img
-						src="https://i.ytimg.com/vi/GivbK_KyUdM/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">WILTY: Season 6</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLc0fG_3lLqmKEXCZbDNuen5jqHzbWjqMx" target="_blank"><img
-						src="https://i.ytimg.com/vi/ldzAtNScYlM/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">WILTY: Season 7</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLc0fG_3lLqmKW1TMkwyrkMETrmqiPfkPm" target="_blank"><img
-						src="https://i.ytimg.com/vi/2HLUeLzMTvk/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">WILTY: Season 8</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLc0fG_3lLqmKXLZwTgU6dlM4U4_Kkkibr" target="_blank"><img
-						src="https://i.ytimg.com/vi/FlJByRfjLXM/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">WILTY: Season 9</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLc0fG_3lLqmLyklFx-cUaP2co_8LHqHjH" target="_blank"><img
-						src="https://i.ytimg.com/vi/p_fXo8pwywU/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">WILTY: Season 10</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLc0fG_3lLqmKh20yx8xjW9BpBjtgYkThY" target="_blank"><img
-						src="https://i.ytimg.com/vi/mgEzDf2aJtM/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">WILTY: Season 11</p>
-				</a></div>
-
-			</div>
-		</div>
-	</div>
-
-	<!-- TV Show: Jet Lag: The Game -->
-	<div class="lity-hide" id="tv-jetlag">
-		<div class="container">
-			<div class="row">
-				<h3 class="text-white">Jet Lag: The Game</h3>
-			</div>
-			<div class="row">
-				<div class="col-6 col-md-4"><a
-						href="https://www.youtube.com/playlist?list=PLB7ZcpBcwdC7z1fCZetTI8TPeLlgagF9v" target="_blank"><img
-							src="https://i.ytimg.com/vi/oZSUxdzgA08/hq720.jpg" class="img-fluid"
-							alt="">
-						<p class="mt-2 text-white">Connect 4 Across America</p>
-					</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLB7ZcpBcwdC7rGYl6StHarkLlgeZX66oL" target="_blank"><img
-						src="https://i.ytimg.com/vi/Gta43oOV4Ag/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Race to Circumnavigate the Globe</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLB7ZcpBcwdC5B-l2FQNOPJVFpqF0QVxfG" target="_blank"><img
-						src="https://i.ytimg.com/vi/q2tJqO6nCSc/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Tag Across Europe</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLB7ZcpBcwdC7ogXbMvwuBSfj3LHVRCqLc" target="_blank"><img
-						src="https://i.ytimg.com/vi/E0ejkkFT3V0/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Race To Visit The Most US States</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLB7ZcpBcwdC4SeH7qNw05wgU03HlRGiiS" target="_blank"><img
-						src="https://i.ytimg.com/vi/LxLgmsmvXOE/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">New Zealand Board Game</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLB7ZcpBcwdC6OjHpxnkSL2RzbmC2moNt1" target="_blank"><img
-						src="https://i.ytimg.com/vi/8ZM_hPF1hsY/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Capture The Flag Across Japan</p>
-				</a></div>
-
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLB7ZcpBcwdC6wkQRczVE4Fz-4kUOIc3d1" target="_blank"><img
-						src="https://i.ytimg.com/vi/IV1dbqcg9bI/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Tag Across Europe 2</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLB7ZcpBcwdC6zyXJyImHgVdrC4Vl8SNG9" target="_blank"><img
-						src="https://i.ytimg.com/vi/Qfb9eVgksms/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Arctic Escape</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLB7ZcpBcwdC7gTO_IVdiBv8nVPLKbqNa4" target="_blank"><img
-						src="https://i.ytimg.com/vi/E8UmTJVDnUI/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Hide + Seek</p>
-				</a></div>
-			</div>
-		</div>
-	</div>
-	<!-- TV Show: Norm Macdonald Live -->
-	<div class="lity-hide" id="tv-normlive">
-		<div class="container">
-			<div class="row">
-				<h3 class="text-white">Norm Macdonald Live</h3>
-			</div>
-			<div class="row">
-				<div class="col-6 col-md-4"><a
-						href="https://archive.org/details/Norm_Macdonald_Live/Norm+Macdonald+Live+-+S01E01+-+Norm+Macdonald+with+Guest+Super+Dave+Osborne.mp4" target="_blank"><img
-							src="https://i.ytimg.com/vi/pIKlq1r6gdY/hq720.jpg" class="img-fluid"
-							alt="">
-						<p class="mt-2 text-white">Season 1</p>
-					</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://archive.org/details/Norm_Macdonald_Live/Norm+Macdonald+Live+-+S02E01+-+Norm+Macdonald+with+Guest+Ray+Romano.mp4" target="_blank"><img
-						src="https://i.ytimg.com/vi/NnrJuyEeYx0/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Season 2</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://archive.org/details/Norm_Macdonald_Live/Norm+Macdonald+Live+-+S03E01+-+Norm+Macdonald+with+Guest+Stephen+Merchant.mp4" target="_blank"><img
-						src="https://i.ytimg.com/vi/EGS3TIHKDJk/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Season 3</p>
-				</a></div>
-
-			</div>
-		</div>
-	</div>
-	<!-- TV Show: Taskmaster -->
-	<div class="lity-hide" id="tv-taskmaster">
-		<div class="container">
-			<div class="row">
-				<h3 class="text-white">Taskmaster</h3>
-			</div>
-			<div class="row">
-				<div class="col-6 col-md-4"><a
-						href="https://www.youtube.com/playlist?list=PLRWvNQVqAeWL5JRKdVCRYY0ONc5n0qWLg" target="_blank"><img
-							src="https://i.ytimg.com/vi/5PmmtbBgNLI/hq720.jpg" class="img-fluid"
-							alt="">
-						<p class="mt-2 text-white">Series 5</p>
-					</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLRWvNQVqAeWIG09UEJpC22svTFS4jaRD7" target="_blank"><img
-						src="https://i.ytimg.com/vi/UMdpbvTiA2g/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Series 6</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLRWvNQVqAeWLksz49j1YmlkfgQelECDb0" target="_blank"><img
-						src="https://i.ytimg.com/vi/dudmIc5AWR0/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Series 7</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLRWvNQVqAeWJSC9O6-3lIreQRe1vu71jz" target="_blank"><img
-						src="https://i.ytimg.com/vi/39n5LJel7qk/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Series 8</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLRWvNQVqAeWLPYrIW3bUWik62khdhk2Ro" target="_blank"><img
-						src="https://i.ytimg.com/vi/2BNpnbiFlTk/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Series 9</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLRWvNQVqAeWIcz0Ky6pnrKkqsp3MA7o_n" target="_blank"><img
-						src="https://i.ytimg.com/vi/_WUDzu5cVCY/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Series 10</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLRWvNQVqAeWI4Fpgkl3gMg2Rnx0dZ_s0r" target="_blank"><img
-						src="https://i.ytimg.com/vi/vNTxnYm81n8/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Series 11</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLRWvNQVqAeWJarmdncJk0jFhijoqi3PDo" target="_blank"><img
-						src="https://i.ytimg.com/vi/KJrEaJqejwo/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Series 12</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLRWvNQVqAeWK4MWpTWZvdVV5wBCDepUhw" target="_blank"><img
-						src="https://i.ytimg.com/vi/Tv_q0RMaV6Y/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Series 13</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLRWvNQVqAeWIIp9qYiyyZmx42gFXA6dhX" target="_blank"><img
-						src="https://i.ytimg.com/vi/tnbuh4fC80g/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Series 14</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLRWvNQVqAeWL4HWbifeLsqLIAvUT6XY0Q" target="_blank"><img
-						src="https://i.ytimg.com/vi/LbRuC41l2-M/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Series 15</p>
-				</a></div>
-
-				<div class="col-6 col-md-4"><a
-					href="https://www.youtube.com/playlist?list=PLRWvNQVqAeWIPrNqmPTt5KVp5VD0SRkcd" target="_blank"><img
-						src="https://i.ytimg.com/vi/r1PoSdFWvQg/hq720.jpg" class="img-fluid"
-						alt="">
-					<p class="mt-2 text-white">Series 16</p>
-				</a></div>
-
-			</div>
-		</div>
-	</div>
-	<!-- TV Show: The Inbetweeners -->
-	<div class="lity-hide" id="tv-inbetweeners">
-		<div class="container">
-			<div class="row">
-				<h3 class="text-white">Inbetweeners</h3>
-			</div>
-			<div class="row">
-				<div class="col-6 col-md-4"><a
-						href="https://www.youtube.com/playlist?list=PLUA9kG1DciUytU_Vgy2UXOxGJLYkJBz91" target="_blank"><img
-							src="https://i.ytimg.com/vi/Y3SnqFQutaI/hq720.jpg" class="img-fluid"
-							alt="">
-						<p class="mt-2 text-white">Available Episodes</p>
-					</a></div>
-
-				
-
-			</div>
-		</div>
-	</div>
-		<!-- TV Show: Power On: Xbox -->
-		<div class="lity-hide" id="tv-xbox">
-			<div class="container">
-				<div class="row">
-					<h3 class="text-white">Power On: Xbox Story</h3>
-				</div>
-				<div class="row">
-					<div class="col-6 col-md-4"><a
-							href="https://www.youtube.com/playlist?list=PL0il2l-B_WwadxfTkK3-NLoYNcQEHdBGO" target="_blank"><img
-								src="https://i.ytimg.com/vi/Uc3wkL5fDuA/hq720.jpg" class="img-fluid"
-								alt="">
-							<p class="mt-2 text-white">All Episodes</p>
-						</a></div>
-	
-					
-	
-				</div>
-			</div>
-		</div>
-	
+<script> 
+    $(function(){
+      $("#tvShowContent").load("../data/tv-html/tvshows.html"); 
+    });
+    </script> 
 </body>
+
 
 
 </html>
