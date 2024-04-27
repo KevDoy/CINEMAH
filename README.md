@@ -1,7 +1,7 @@
 ## Synopsis
 ![logo](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/logo.png "CINEMAH logo")
 
-CINEMAH (ver. 1.0) is a simple web based based video organization interface that help you organize movies and TV shows that you find across the web (ie. YouTube, Google Drive, etc). It is designed to be responsive and accessed both on Desktop and Mobile devices and can be installed as web app on Android, iOS and iPadOS.
+CINEMAH (ver. 2.0) is a simple web based based video organization interface that help you organize movies and TV shows that you find across the web (ie. YouTube, Google Drive, etc). It is designed to be responsive and accessed both on Desktop and Mobile devices and can be installed as web app on Android, iOS and iPadOS.
 
 ![screenshot](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/screenshot.jpg "CINEMAH Main Page")
 
@@ -30,7 +30,7 @@ Inside you'll find content scrutured like this.
 	},`
 `imgurl` is a URL pointing at an image online. `vidurl` is an HTML ID you assign to the show. `movietitle` is the title of the TV Show.
 
-The actual seasons will live inside of `/package/index.html` for the time being. This is where the vidurl ID that you created comes into play.
+The actual seasons will live inside of `/data/tv-html/tvshows.html` for the time being. This is where the vidurl ID that you created comes into play.
 Inside the HTML you'll see a TV show structured like this at the bottom of the page. If you're adding a new show, it is probably easiest to copy and modify an existing one.
 `
 <!-- TV Show: Kitchen Nightmares -->
@@ -107,7 +107,7 @@ Join the conversation:
 [@CINEMAHnet on Twitter](https://www.twitter.com/CINEMAHnet)
 
 ## License
-Bootstrap, Lity, JSON2HTML all have their own licenses that are not listed here. Apart from these libraries and tools, CINEMAH is licensed as follows:
+Bootstrap, Lity, JSON2HTML, and [youtube-background](https://github.com/stamat/youtube-background) all have their own licenses that are not listed here. Apart from these libraries and tools, CINEMAH is licensed as follows:
 
 Attribution 2.0 Generic
 You are free to:
