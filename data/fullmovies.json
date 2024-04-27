@@ -1,6 +1,11 @@
 [
 	
 	{
+		"ytid": "Zn_qirpdBag",
+        "vidurl": "https://archive.org/download/lion-king-laserdisc-capture/Lion%20King%20Laserdisc%20Capture.mp4",
+        "movietitle": "The Lion King"
+	},
+	{
 		"ytid": "bupOXE5nFDE",
         "vidurl": "https://www.youtube.com/watch?v=bupOXE5nFDE",
         "movietitle": "The Social Network"
@@ -54,11 +59,6 @@
 		"ytid": "OW9pfAM0Vek",
         "vidurl": "https://www.youtube.com/watch?v=Z5iNR8-eB5Q",
         "movietitle": "Walk Hard: The Dewey Cox Story"
-	},
-	{
-		"ytid": "v1114pRZREg",
-        "vidurl": "https://www.pokeflix.tv/v/pokemon-movie-mewtwo-strikes-back",
-        "movietitle": "Pokémon - Mewtwo Strikes Back"
 	}
 
 ]
