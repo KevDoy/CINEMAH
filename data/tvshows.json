@@ -53,6 +53,11 @@
 		"imgurl": "https://i.ytimg.com/vi/0MwpNkqlbNE/hq720.jpg",
         "vidurl": "#tv-mythbusters",
         "movietitle": "Mythbusters"
+	},
+	{
+		"imgurl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/53/0c/1a/530c1ae5-50b9-d9b3-0ff5-0b033bb6e6b3/mza_16671228502293088837.jpg/1200x630wp.png",
+        "vidurl": "#tv-reddit",
+        "movietitle": "Smosh Reads Reddit Stories"
 	}
 
 
