@@ -13,5 +13,20 @@
         "herolink": "https://www.youtube.com/watch?v=Fjp2TdlTTIU",
         "movietitle": "Phineas & Ferb",
         "heroimage": "https://i.ytimg.com/vi/Fjp2TdlTTIU/hq720.jpg"
+    },
+    {
+        "herolink": "https://www.youtube.com/watch?v=wWPIsnnIKmo",
+        "movietitle": "Ambient Swim [as]",
+        "heroimage": "https://i.ytimg.com/vi/wWPIsnnIKmo/hq720.jpg"
+    },
+    {
+        "herolink": "https://archillect.com/tv",
+        "movietitle": "Archillect TV",
+        "heroimage": "https://i.ytimg.com/vi/vq3d8TyeDoU/hq720.jpg"
+    },
+    {
+        "herolink": "https://www.youtube.com/watch?v=qiheRTcwkc4",
+        "movietitle": "Space Ghost Coast to Coast",
+        "heroimage": "https://i.ytimg.com/vi/qiheRTcwkc4/hq720.jpg"
     }
 ]
