@@ -56,16 +56,8 @@ img:active {
 	color: black;
 	text-decoration: none;
 }
-#wrapper {
-	background-image: url("/img/bg-hero.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: bottom;
-	background-color: #d7473c;
-	margin-bottom: 30px;
-}
-#wrapper h4, #wrapper p {
-	color: #ffffff!important;
+.wrapper {
+	background: radial-gradient(circle at 50% 50%,rgba(255, 255, 255, 0.06), rgba(215, 71, 60, 0));
 }
 
 	body {
@@ -226,12 +218,15 @@ img:active {
 
 .featured-hero {
 	border-radius: 30px;
+	box-shadow: 0 5px 20px 0 rgba(255,255,255,0.05);
+	border: 3px solid rgba(0,0,0,0.1);
 }
 
 
 @media (max-width: 575px) {
 	.featured-hero {
 		border-radius: 0;
+		border: none;
 	}
 	}
 
