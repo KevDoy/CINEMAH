@@ -2,57 +2,74 @@
 	{
 		"imgurl": "https://i.ytimg.com/vi/xhYl7Jjefo8/hq720.jpg",
         "vidurl": "#tv-jetlag",
-        "movietitle": "Jet Lag: The Game"
+        "movietitle": "Jet Lag: The Game",
+		"modal": "data-lity"
 	},
 	{
 		"imgurl": "https://i.ytimg.com/vi/Au8YAzbuDz4/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCaRcW_YFS52TsdLKKroInbZkJJvA",
         "vidurl": "#tv-peepshow",
-        "movietitle": "Peep Show"
+        "movietitle": "Peep Show",
+		"modal": "data-lity"
 	},
 	{
 		"imgurl": "https://yt3.googleusercontent.com/p02AWxuQdbDeG6CR5RqKgR2TkHBzftLAr_O4QyeNHm-8Z6WkJNKWMJRZmxM8nssgdEEb9e7CKQ",
         "vidurl": "#tv-kitchennightmares",
-        "movietitle": "Kitchen Nightmares"
+        "movietitle": "Kitchen Nightmares",
+		"modal": "data-lity"
 	},	
 	{
 		"imgurl": "https://img.youtube.com/vi/rWyWSjMibaI/hq720.jpg",
         "vidurl": "#tv-normlive",
-        "movietitle": "Norm Macdonald Live"
+        "movietitle": "Norm Macdonald Live",
+		"modal": "data-lity"
 	},
 	{
 		"imgurl": "https://i.ytimg.com/vi/t3Z2cWY9tOY/hq720.jpg",
         "vidurl": "#tv-fridaynightdinner",
-        "movietitle": "Friday Night Dinner"
+        "movietitle": "Friday Night Dinner",
+		"modal": "data-lity"
 	},
 	{
 		"imgurl": "https://i.ytimg.com/vi/kvQP_OLwNrE/hq720.jpg",
         "vidurl": "#tv-wouldILieToYou",
-        "movietitle": "Would I Lie To You?"
+        "movietitle": "Would I Lie To You?",
+		"modal": "data-lity"
 	},
 	{
 		"imgurl": "https://yt3.googleusercontent.com/zQO_5wxVZcK_sPkG_NDQJYOU_ZJl3l7PofqF_ILsUu4KY23rDQ7Udzc3FV4P7BLSqTPYSdssGA",
         "vidurl": "#tv-taskmaster",
-        "movietitle": "Taskmaster"
+        "movietitle": "Taskmaster",
+		"modal": "data-lity"
 	},
 	{
 		"imgurl": "https://i.ytimg.com/vi/Y3SnqFQutaI/hq720.jpg",
         "vidurl": "#tv-inbetweeners",
-        "movietitle": "The Inbetweeners"
+        "movietitle": "The Inbetweeners",
+		"modal": "data-lity"
 	},
 	{
 		"imgurl": "https://i.ytimg.com/vi/Uc3wkL5fDuA/hq720.jpg",
-        "vidurl": "#tv-xbox",
-        "movietitle": "Power On: The Story of Xbox"
+        "vidurl": "https://www.youtube.com/playlist?list=PL0il2l-B_WwadxfTkK3-NLoYNcQEHdBGO",
+        "movietitle": "Power On: The Story of Xbox",
+		"modal": ""
 	},
 	{
 		"imgurl": "https://i.ytimg.com/vi/0zueuOYTZ1I/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAkc73SGINbfjeoJ1c1yxT7I_VsNA",
         "vidurl": "#tv-g4icons",
-        "movietitle": "G4 Icons"
+        "movietitle": "G4 Icons",
+		"modal": "data-lity"
 	},
 	{
 		"imgurl": "https://i.ytimg.com/vi/0MwpNkqlbNE/hq720.jpg",
         "vidurl": "#tv-mythbusters",
-        "movietitle": "Mythbusters"
+        "movietitle": "Mythbusters",
+		"modal": "data-lity"
+	},
+	{
+		"imgurl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/53/0c/1a/530c1ae5-50b9-d9b3-0ff5-0b033bb6e6b3/mza_16671228502293088837.jpg/1200x630wp.png",
+        "vidurl": "https://www.youtube.com/playlist?list=PLcL9r1K3TSwpOVyQKP1MruSuY-NS99iQY",
+        "movietitle": "Smosh Reddit Stories",
+		"modal": ""
 	}
 
 
