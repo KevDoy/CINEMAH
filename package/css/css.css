@@ -67,16 +67,15 @@ img:active {
 #wrapper h4, #wrapper p {
 	color: #ffffff!important;
 }
-/* DARK MODE */
-@media (prefers-color-scheme: dark) {
+
 	body {
 		background: #19171a;
 	}	
 	* {
-		color: #f4f2f2!important;
+		color: #f4f2f2;
 	}
 
-}
+
 
 /*Lity Edits*/
 .lity {
