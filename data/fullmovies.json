@@ -2,7 +2,7 @@
 	
 	{
 		"ytid": "Zn_qirpdBag",
-        "vidurl": "https://archive.org/download/lion-king-laserdisc-capture/Lion%20King%20Laserdisc%20Capture.mp4",
+        "vidurl": "https://archive.org/embed/lion-king-laserdisc-capture",
         "movietitle": "The Lion King"
 	},
 	{
@@ -27,7 +27,7 @@
 	},
 	{
 		"ytid": "ikvG12nLJRk",
-        "vidurl": "https://archive.org/download/true-lies-1994-d-theater/True%20Lies%20%281994%29%20%5BD-Theater%5D.mp4",
+        "vidurl": "https://archive.org/embed/true-lies-1994-d-theater",
         "movietitle": "True Lies"
 	},
 	{
@@ -59,6 +59,16 @@
 		"ytid": "OW9pfAM0Vek",
         "vidurl": "https://www.youtube.com/watch?v=Z5iNR8-eB5Q",
         "movietitle": "Walk Hard: The Dewey Cox Story"
+	},
+	{
+		"ytid": "HgovvJVgopk",
+        "vidurl": "https://www.youtube.com/watch?v=NvQ7F-gKLoY",
+        "movietitle": "Silver Linings Playbook"
+	},
+	{
+		"ytid": "MKYHbgcwe-U",
+        "vidurl": "https://archive.org/embed/holes-2003_202204",
+        "movietitle": "Holes"
 	}
 
 ]
