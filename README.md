@@ -1,7 +1,7 @@
 ## Synopsis
 ![logo](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/logo.png "CINEMAH logo")
 
-CINEMAH (ver. 2.0) is a simple web based based video organization interface that help you organize movies and TV shows that you find across the web (ie. YouTube, Google Drive, etc). It is designed to be responsive and accessed both on Desktop and Mobile devices and can be installed as web app on Android, iOS and iPadOS.
+CINEMAH (ver. 2.1) is a static web interface that help you organize movies and TV shows that you find across the web (ie. YouTube, Google Drive, etc). It is designed to be responsive and accessed both on Desktop and Mobile devices and can be installed as web app on Android, iOS and iPadOS. It does not have or need a backend. All content is dynamically loaded from json and html files.
 
 ![screenshot](https://raw.githubusercontent.com/KevDoy/CINEMAH/master/screenshot.jpg "CINEMAH Main Page")
 
