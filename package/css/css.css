@@ -211,7 +211,7 @@ img:active {
 } 
 .videoImg:active {
 	opacity: 0;
-	transition: 0.5s;
+	transition: 0.1s;
 	transform: scale(3);
 	filter: blur(20px);
 }
