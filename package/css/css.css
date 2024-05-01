@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 * {
-	font-family: 'Roboto', sans-serif!important;
+	font-family: 'Poppins', sans-serif!important;
 	color: #0e0e0e;
 }
 h1, h2, h3, h4 {
@@ -213,6 +213,7 @@ img:active {
 	opacity: 0;
 	transition: 0.5s;
 	transform: scale(3);
+	filter: blur(20px);
 }
 
 
