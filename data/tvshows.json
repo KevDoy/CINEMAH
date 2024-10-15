@@ -15,7 +15,7 @@
         "movietitle": "Kitchen Nightmares"
 	},	
 	{
-		"imgurl": "https://img.youtube.com/vi/rWyWSjMibaI/hq720.jpg",
+		"imgurl": "https://img.youtube.com/vi/SKeIdJfzpM4/hq720.jpg",
         "vidurl": "#tv-normlive",
         "movietitle": "Norm Macdonald Live"
 	},
@@ -58,6 +58,11 @@
 		"imgurl": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts122/v4/53/0c/1a/530c1ae5-50b9-d9b3-0ff5-0b033bb6e6b3/mza_16671228502293088837.jpg/1200x630wp.png",
         "vidurl": "#tv-reddit",
         "movietitle": "Smosh Reads Reddit Stories"
+	},
+	{
+		"imgurl": "https://img.youtube.com/vi/MKRQHhC82jE/hq720.jpg",
+        "vidurl": "#tv-3sheets",
+        "movietitle": "Three Sheets"
 	}
 
 
